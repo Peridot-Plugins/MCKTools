@@ -1,0 +1,32 @@
+group 'me.mckoxu.mcktools'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+jar{
+    from { configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://nexus.hc.to/content/repositories/pub_releases" }
+    maven { url "http://repo.extendedclip.com/content/repositories/placeholderapi/" }
+    maven { url "https://repo.panda-lang.org/" }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly "org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT"
+    compileOnly "me.clip:placeholderapi:2.10.4"
+    compileOnly "net.dzikoysk:funnyguilds:4.5.1"
+    compileOnly "net.milkbowl.vault:VaultAPI:1.7"
+    compile "com.zaxxer:HikariCP:3.4.1"
+    implementation "com.github.WesJD.AnvilGUI:anvilgui:7dbcfc2cdb"
+}

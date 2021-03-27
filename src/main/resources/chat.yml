@@ -1,0 +1,64 @@
+messages:
+  chatclear:
+    - ''
+    - '&8» &7Chat zostal: &2Wyczyszczony &7przez &2{ADMIN}'
+    - ''
+  chaton:
+    - ''
+    - '&8» &7Chat zostal: &2Wlaczony &7przez &2{ADMIN}'
+    - ''
+  chatoff:
+    - ''
+    - '&8» &7Chat zostal: &2Wylaczony &7przez &2{ADMIN}'
+    - ''
+  chatblock: '&8» &7Chat jest wylaczony !'
+  motd:
+    - '&8&m----------------------------------------'
+    - '&8» &7Witaj &2{PLAYER}'
+    - '&8» &7Gracze online: &2{ONLINE}&8/&2{MAXONLINE}'
+    - '&8» &7Odwiedzasz nas po raz: &2{JOINAMOUNTPLAYER}'
+    - '&8» &7Odwiedzono nas: &2{JOINAMOUNTGLOBAL} &7razy'
+    - '&8&m----------------------------------------'
+slowmode:
+  time: 5
+  msg: '&8» &7Na chacie bedziesz mogl napisac za: &2{TIME} &7sekund!'
+automsg:
+  type: player #player/console
+  time: 1 #Minutes
+  msgs:
+    1:
+      - '&8----------------------------'
+      - '&6Wiadomosc 1'
+      - '&8----------------------------'
+    2:
+      - '&8----------------------------'
+      - '&6Wiadomosc 2'
+      - '&8----------------------------'
+    3:
+      - '&8----------------------------'
+      - '&6Wiadomosc 3'
+      - '&8----------------------------'
+chatformat:
+  default_format: '&2{G-TAG} &2{POINTS} &7{DISPLAYNAME}&8: &f{MSG}'
+  default_join: '&8[&a+&8] &7{PLAYER}'
+  default_quit: '&8[&c-&8] &7{PLAYER}'
+  groups:
+    Gracz:
+      format: '&2{G-TAG} &2{POINTS} &a{DISPLAYNAME}&8: &f{MSG}'
+      join: '&8[&a+&8] &7{PLAYER}'
+      quit: '&8[&c-&8] &7{PLAYER}'
+    Vip:
+      format: '&2{G-TAG} &2{POINTS} &6{DISPLAYNAME}&8: &e{MSG}'
+      join: '&8[&a+&8] &6VIP &7{PLAYER}'
+      quit: '&8[&c-&8] &6VIP &7{PLAYER}'
+    Admin:
+      format: '&2{G-TAG} &2{POINTS} &4{DISPLAYNAME}&8: &c{MSG}'
+      join: '&8[&a+&8] &4ADMIN &c{PLAYER}'
+      quit: '&8[&c-&8] &4ADMIN &c{PLAYER}'
+censore:
+  symbol: '*****'
+  words:
+    - kurwa
+    - chuj
+    - huj
+    - japierdole

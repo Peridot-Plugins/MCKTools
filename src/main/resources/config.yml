@@ -1,0 +1,590 @@
+config:
+  update:
+    check: true
+  blockedcmd:
+    list:
+      - '/reload'
+  mysql:
+    hostname: 'localhost'
+    database: 'db'
+    user: 'root'
+    password: 'password'
+    port: 3306
+  format:
+    date: "dd/MM/YYYY HH:mm:ss"
+    decimal: "##.#"
+  autosave:
+    time: 60
+  teleportation:
+    delay: 5
+  motd:
+    versionname: '&7Gracze&8: &2{ONLINE}&8/&2{MAXONLINE}'
+    motd:
+      line1: '&7Defaultowe motd'
+      line2: '&7Online&8: &2{ONLINE}&8/&2{MAXONLINE}'
+    hovertext:
+      - '&8&m------------------------------'
+      - '&7Strona&8: &2serwer.pl'
+      - '&7Sklep&8: &2serwer.pl'
+      - '&7TS3&8: &2serwer.pl'
+      - '&8&m------------------------------'
+    serverfull: '&8» &7Serwer jest pelny!||&7Wroc ponownie pozniej !'
+  mining:
+    min: 1
+    max: 5
+    expmultiplayer: 1000
+    actionbar: '&7Osiagnieto lvl: &2{LVL} &7Exp do nastepnego lvla: &2{EXP}'
+  trash:
+    title: '&8» &2Kosz'
+  stats:
+    title: '&8» &2Statystyki - {PLAYER}'
+    size: 5
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    items:
+      kills:
+        slot: 1
+        material: DIAMOND_SWORD
+        data: 0
+        name: '&2Zabjostwa &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ilosc: &2{KILLS}'
+      deaths:
+        slot: 3
+        material: ROTTEN_FLESH
+        data: 0
+        name: '&2Smierci &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ilosc: &2{DEATHS}'
+      kdr:
+        slot: 5
+        material: MAP
+        data: 0
+        name: '&2KDR &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Stosunek: &2{KDR}'
+      mininglvl:
+        slot: 7
+        material: EXP_BOTTLE
+        data: 0
+        name: '&2Lvl &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Lvl: &2{LVL}'
+          - '&8» &7Exp: &2{EXP}&8/&2{EXPTOLVL} &8(&7{EXPPERCENT}%&8)'
+      placedblocks:
+        slot: 20
+        material: BRICK
+        data: 0
+        name: '&2Postawione Bloki &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ogolnie: &2{PLACEDBLOCKS}'
+          - '&8» &7Obsydian: &2{PLACEDOBSIDIAN}'
+      minedblocks:
+        slot: 24
+        material: DIAMOND_PICKAXE
+        data: 0
+        name: '&2Zniszczone Bloki &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ogolnie: &2{MINEDBLOCKS}'
+          - '&8» &7Stone: &2{MINEDSTONE}'
+          - '&8» &7Obsydian: &2{MINEDOBSIDIAN}'
+      rank:
+        slot: 37
+        material: PAPER
+        data: 0
+        name: '&2Ranking &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Punkty: &2{POINTS}'
+          - '&8» &7Pozycja: &2{POSITION}'
+      rankguild:
+        slot: 39
+        material: OBSIDIAN
+        data: 0
+        name: '&2Ranking Gildi &8- &7{PLAYER} &8- &7{G-TAG}'
+        lore:
+          - '&8» &7Punkty: &2%{G-POINTS}'
+          - '&8» &7Pozycja: &2%{G-POSITION}'
+      throwedpearls:
+        slot: 41
+        material: ENDER_PEARL
+        data: 0
+        name: '&2Rzucone Perly &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ilosc: &2{THROWEDENDERPEARLS}'
+      eatenitems:
+        slot: 43
+        material: COOKED_BEEF
+        data: 0
+        name: '&2Zjedzone Rzeczy &8- &7{PLAYER}'
+        lore:
+          - '&8» &7Ogolnie: &2{EATENITEMS}'
+          - '&8» &7Zlote Jablka: &2{EATENGOLDAPPLES}'
+          - '&8» &7Enchantowane Zlote Jablka: &2{EATENENCHANTEDGOLDAPPLES}'
+  punishments:
+    defaultreason: 'Musiales zrobic cos zlego !'
+    kick: "&8&m------------------------------||&7Zostales wyrzucony||&7Powod&8: &2{REASON}||&7Admin&8: &2{ADMIN}||&8&m------------------------------"
+    ban: "&8&m------------------------------||&7Zostales zbanowany||&7Powod&8: &2{REASON}||&7Admin&8: &2{ADMIN}||&7Do kiedy&8: &2{TIME}||&8&m------------------------------"
+    banip: "&8&m------------------------------||&7Zostales zbanowany na IP||&7Powod&8: &2{REASON}||&7Admin&8: &2{ADMIN}||&7Do kiedy&8: &2{TIME}||&8&m------------------------------"
+  help:
+    title: '&8» &2Pomoc'
+    size: 5
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    items:
+      commands:
+        slot: 1
+        material: PAPER
+        data: 0
+        amount: 1
+        name: '&8» &7Komendy'
+        lore:
+          - '&8» &2/spawn &8- &7teleportuje cie na spawn'
+          - '&8» &2/warp &8- &7warpy'
+          - '&8» &2/kit &8- &7lista kitow'
+          - '&8» &2/helpop &8- &7wysyla wiadomosc do administracji'
+          - '&8» &2/msg &8- &7wysyla wiadomosc prywatna'
+          - '&8» &2/tpa &8- &7teleportuje do gracza'
+          - '&8» &2/statystyki &8- &7wyswietla twoje statystyki'
+          - '&8» &2/gildia &8- &7komendy zwiazane z gildia'
+        enchantment:
+      vip_info:
+        slot: 4
+        material: GOLD_INGOT
+        data: 0
+        amount: 1
+        name: '&8» &6VIP'
+        lore:
+          - '&8» &2Komendy:'
+          - '&8» &2/tpahere &8- &7teleportuje podanego gracza do ciebie'
+          - '&8» &2/enderchest &8- &7pozwala otworzyc enderchest gdzie kolwiek jestes !'
+          - '&8» &2/workbench &8- &7pozwala otworzyc workbench gdzie kolwiek jestes !'
+        enchantment:
+        commands:
+        consolecommands:
+      info:
+        slot: 7
+        material: MAP
+        data: 0
+        amount: 1
+        name: '&8» &7Informacje'
+        lore:
+          - '&8» &7Online: &2{ONLINE}&8/&2{MAXONLINE}'
+          - '&8» &7Wejsca na serwer: {JOINAMOUNTGLOBAL}'
+        enchantment:
+        commands:
+        consolecommands:
+      drop:
+        slot: 20
+        material: STONE
+        data: 0
+        amount: 1
+        name: '&8» &7Drop'
+        lore:
+          - '&8» &7Zobacz drop na serwerze!'
+        enchantment:
+        commands:
+          - 'drop'
+        consolecommands:
+      recipes:
+        slot: 22
+        material: WORKBENCH
+        data: 0
+        amount: 1
+        name: '&8» &7Receptury'
+        lore:
+          - '&8» &7Zobacz receptury na serwerze!'
+        enchantment:
+        commands:
+          - 'recipes'
+        consolecommands:
+      admins:
+        slot: 24
+        material: COMMAND
+        data: 0
+        amount: 1
+        name: '&8» &7Administracja'
+        lore:
+          - '&8» &7Zobacz administracje na serwerze!'
+        enchantment:
+        commands:
+          - 'admins'
+        consolecommands:
+      stats:
+        slot: 39
+        material: DIAMOND_SWORD
+        data: 0
+        amount: 1
+        name: '&8» &7Statystyki'
+        lore:
+          - '&8» &7Zobacz swoje statystyki!'
+        enchantment:
+        commands:
+          - 'stats'
+        consolecommands:
+      top:
+        slot: 41
+        material: BEACON
+        data: 0
+        amount: 1
+        name: '&8» &7Topka'
+        lore:
+          - '&8» &7Zobacz topke serwera!'
+        enchantment:
+        commands:
+          - 'top'
+        consolecommands:
+  admin:
+    title: '&8» &2Administracja'
+    size: 3
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    admins:
+      wlasciciel:
+        slot: 10
+        name: '&4McKoxu'
+        lore:
+          - '&8» &7Ranga: &2WLASCICIEL'
+        nick: McKoxu
+      admin:
+        slot: 13
+        name: '&cJeb_'
+        lore:
+          - '&8» &7Ranga: &2ADMIN'
+        nick: jeb_
+      moderator:
+        slot: 16
+        name: '&2Notch'
+        lore:
+          - '&8» &7Ranga: &2MODERATOR'
+        nick: notch
+  itemshop:
+    vip:
+      message:
+        - '&8-----------------------------------------------------'
+        - '&8» &7Gratulacje ! Gracz &2{PLAYER} &7zakupil range VIP !'
+        - '&8-----------------------------------------------------'
+      commands:
+        - "pex user {PLAYER} group set VIP"
+    svip:
+      message:
+        - '&8-----------------------------------------------------'
+        - '&8» &7Gratulacje ! Gracz &2{PLAYER} &7zakupil range SVIP !'
+        - '&8-----------------------------------------------------'
+      commands:
+        - "pex user {PLAYER} group set SVIP"
+    diamonds:
+      message:
+        - '&8-----------------------------------------------------'
+        - '&8» &7Gratulacje ! Gracz &2{PLAYER} &7zakupil 64 diamenty !'
+        - '&8-----------------------------------------------------'
+      commands:
+        - "give {PLAYER} minecraft:diamond 64"
+  recipes:
+    title: '&8» &2Receptury'
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    buttons:
+      next:
+        name: '&8» &7Nastepna strona'
+        lore:
+          - '&2-->'
+      previous:
+        name: '&8» &7Poprzednia strona'
+        lore:
+          - '&2<--'
+      page:
+        material: PAPER
+        name: '&8» &7Aktualna strona'
+        lore:
+          - '&8» &2{PAGE}&7/&2{MAXPAGE}'
+    recipes:
+      1:
+        items:
+          1:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          2:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          3:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          4:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          5:
+            material: DIAMOND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          6:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          7:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          8:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          9:
+            material: STONE
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+        result:
+          material: ENDER_STONE
+          data: 0
+          amount: 1
+          name: '&2Stoniarka'
+          lore:
+            - '&8» &7Postaw na ziemi aby otrzyma» dalsze instrukcje'
+          enchantment:
+      2:
+        items:
+          1:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+          2:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+          3:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+          4:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+          5:
+            material: DIAMOND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ''
+          6:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          7:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          8:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          9:
+            material: OBSIDIAN
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+        result:
+          material: OBSIDIAN
+          data: 0
+          amount: 1
+          name: '&2BoyFarmer'
+          lore:
+            - '&8» &7Postaw na ziemi aby stworzyla sie sciana 60 klockow w dol z obsydianu'
+          enchantment:
+      3:
+        items:
+          1:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          2:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          3:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          4:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          5:
+            material: DIAMOND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          6:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          7:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          8:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+          9:
+            material: SAND
+            data: 0
+            amount: 1
+            name: ''
+            lore:
+              - ' '
+        result:
+          material: SAND
+          data: 0
+          amount: 1
+          name: '&2SandFarmer'
+          lore:
+            - '&8» &7Postaw na ziemi aby stworzyla sie sciana 60 klockow w dol z piasku'
+          enchantment:
+  time:
+    title: '&8» &2Czas'
+    size: 3
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    buttons:
+      day:
+        material: DOUBLE_PLANT
+        data: 0
+        name: '&8» &7DZIEN'
+        lore:
+          - '&2Ustawia pore dnia na dzien'
+        slot: 10
+      night:
+        material: WOOL
+        data: 15
+        name: '&8» &7NOC'
+        lore:
+          - '&2Ustawia pore dnia na noc'
+        slot: 13
+      custom:
+        material: PAPER
+        data: 0
+        name: '&8» &7CUSTOM'
+        lore:
+          - '&2Pozwala ustawic wlasna pore dnia'
+        slot: 16
+  weather:
+    title: '&8» &2Pogoda'
+    size: 3
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    buttons:
+      sun:
+        material: DOUBLE_PLANT
+        data: 0
+        name: '&8» &7SLONECZNA'
+        lore:
+          - '&2Ustawia pogode na sloneczna'
+        slot: 10
+      rain:
+        material: WATER_BUCKET
+        data: 0
+        name: '&8» &7DESZCZOWA'
+        lore:
+          - '&2Ustawia pogode na deszczowa'
+        slot: 13
+      storm:
+        material: REDSTONE
+        data: 0
+        name: '&8» &7BURZOWA'
+        lore:
+          - '&2Ustawia pogode na burzowa'
+        slot: 16
+        
+      
+  
+    
+    

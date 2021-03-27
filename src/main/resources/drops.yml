@@ -1,0 +1,159 @@
+drop:
+  gui:
+    title: '&8» &2Drop'
+    background:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    buttons:
+      stone:
+        material: STONE
+        data: 0
+        name: "&8» &2Drop ze stone'a"
+        lore:
+          - "&8» &7Kliknij aby zobaczyc drop ze stone'a !"
+      cobblestone:
+        material: COBBLESTONE
+        data: 0
+        name: "&8» &2Drop cobbla ze stone"
+        lore:
+          - "&8» &7Status: &2{STATUS}!"
+      case:
+        material: CHEST
+        data: 0
+        name: "&8» &2Drop ze skrzynek"
+        lore:
+          - "&8» &7Kliknij aby zobaczyc drop ze skrzynek!"
+      back:
+        material: INK_SACK
+        data: 1
+        name: "&8» &2Powrot"
+        lore:
+          - "&8» &7Kliknij aby wrocic do glownego menu!"
+      allon:
+        material: WOOL
+        data: 5
+        name: "&8» &2Wlacz wszystko"
+        lore:
+          - "&8» &7Kliknij aby wlaczyc wszystko"
+      alloff:
+        material: WOOL
+        data: 14
+        name: "&8» &2Wylacz wszystko"
+        lore:
+          - "&8» &7Kliknij aby wylaczyc wszystko"
+      bonusdrop:
+        material: ENCHANTED_BOOK
+        data: 0
+        name: "&8» &2Dodatkowe procenty"
+        lore:
+          - "&8» &2FORTUNA:"
+          - "&8» &7Fortuna I - &210% (dodatkowy procent od itemu)"
+          - "&8» &7Fortuna II - &220% (dodatkowy procent od itemu)"
+          - "&8» &7Fortuna III - &230% (dodatkowy procent od itemu)"
+          - "&8» &2TURBODROP:"
+          - "&8» &7TurboDrop- &225% (dodatkowy procent od itemu)"
+      exp:
+        material: EXP_BOTTLE
+        data: 0
+        name: "&8» &2EXP:"
+        lore:
+          - "&8» &7EXP MINECRAFTOWY &8- &25-10"
+          - "&8» &7EXP SERWEROWY &8- &21-5"
+      turbodrop:
+        material: MAP
+        data: 0
+        name: "&8» &2TurboDrop:"
+        lore:
+          - "&8» &7Czas: &2{TURBODROP}"
+    lore:
+      - '&8» &7Szansa: &2{CHANCE}'
+      - '&8» &7Ilosc: &2{AMOUNT-MIN}-{AMOUNT-MAX}'
+      - '&8» &7Wysokosc: &2{HEIGHT-MIN}-{HEIGHT-MAX}'
+      - '&8» &7TurboDrop: &2{TURBODROP}'
+      - '&8» &7Fortuna: &2{FORTUNE}'
+      - '&8» &7Narzedzia: &2{TOOLS}'
+      - '&8» &7Status: &2{STATUS}'
+    status:
+      enable: '&aWlaczone'
+      disable: '&cWylaczone'
+      yesvalue: '&aTak'
+      novalue: '&cNie'
+      anytool: 'Obojetnie'
+  exp:
+    min: 5
+    max: 10
+  bonuspercent:
+    fortune:
+      fortune1: 10
+      fortune2: 20
+      fortune3: 30
+    turbodrop: 25
+  items:
+    diamond:
+      chance: 10
+      material: DIAMOND
+      data: 0
+      name: '&bDiament'
+      lore:
+        - '&7Diament !'
+      enchantment:
+      amount:
+        min: 1
+        max: 3
+      height:
+        min: 0
+        max: 255
+      turbodrop: true
+      fortune: true
+      usetools: true
+      tools:
+        - DIAMOND_PICKAXE
+        - IRON_PICKAXE
+    gold:
+      chance: 15
+      material: GOLD_INGOT
+      data: 0
+      name: '&6Zloto'
+      lore:
+        - '&7Zloto !'
+      enchantment:
+      amount:
+        min: 1
+        max: 3
+      height:
+        min: 0
+        max: 255
+      turbodrop: true
+      fortune: true
+      usetools: true
+      tools:
+        - DIAMOND_PICKAXE
+        - IRON_PICKAXE
+        - STONE_PICKAXE
+    iron:
+      chance: 20
+      material: IRON_INGOT
+      data: 0
+      name: '&fZelazo'
+      lore:
+        - '&7Zelazo !'
+      enchantment:
+      amount:
+        min: 1
+        max: 3
+      height:
+        min: 0
+        max: 255
+      turbodrop: true
+      fortune: true
+      usetools: false
+      tools:
+  blockedblocks:
+    items:
+      - DIAMOND_ORE
+      - GOLD_ORE
+      - IRON_ORE
+    message: '&8» &7Drop z bloku &2{BLOCK} &7jest zablokowany!'
+  
+    

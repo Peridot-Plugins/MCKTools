@@ -1,0 +1,17 @@
+package me.mckoxu.mcktools.enums;
+
+public enum TopType {
+    LEVEL,
+    DEATHS,
+    KILLS,
+    MINED_BLOCKS,
+    MINED_STONE,
+    MINED_OBSIDIAN,
+    PLACED_BLOCKS,
+    PLACED_OBSIDIAN,
+    EATEN_ITEMS,
+    EATEN_GOLD_APPLES,
+    EATEN_ENCHANTED_GOLD_APPLES,
+    THROWED_ENDERPEARLS,
+    JOIN_AMOUNT
+}

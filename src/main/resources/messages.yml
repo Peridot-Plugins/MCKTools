@@ -1,0 +1,233 @@
+messages:
+  globalerrors:
+    noperm: '&8» &7Nie masz uprawnienia (&2{PERM}&7)'
+    correctusage: '&8» &7Poprawne uzycie: &2{CORRECTUSAGE}'
+    unknowcommand: '&8» &7Nie znam komendy &2{CMD} &7Wpisz &2/pomoc &7po liste komend!'
+    noplayer: '&8» &7Na serwerze nie ma gracza: &2{PLAYER}'
+    badip: '&8» &7IP &2{IP} &7jest niepoprawne !'
+    nodataplayer: '&8» &7Na serwerze nigdy nie bylo gracza: &2{PLAYER}'
+    airhand: '&8» &7W rece trzymasz powietrze !'
+    move: '&8» &7Ruszyles sie ! Teleportacja Anulowana!'
+    noguild: ''
+  top:
+    none: '&cBrak'
+    format: '&7{PLAYER} &8[&2{VALUE}&8]'
+  variables:
+    status:
+      disable: '&cWylaczony'
+      enable: '&aWlaczony'
+    gamemode:
+      survival: 'Przetrwanie'
+      creative: 'Kreatwyny'
+      adventure: 'Przygodowy'
+      spectator: 'Spektator'
+  kits:
+    nokits: '&8» &7Nie istnieje zaden kit!'
+    notime: '&8» &7Ten kit bedziesz mogl wziasc dopiero: &2{TIME}'
+  broadcast:
+    defaultcolor: '&2'
+    bc: '&cUWAGA &7>'
+    alert: '&cUWAGA'
+  gamemode:
+    changegm: '&8» &7Twoj gamemode zostal zmieniony na&2: {GM}'
+    changegmother: '&8» &7Zmieniles gamemode gracza &2{PLAYER} &7na&2: {GM}'
+  spawn:
+    setspawn: '&8» &7Spawn zostal ustawiony !'
+    tpdelay: '&8» &7Teleportacja nastapi za &2{DELAY} &7sekund!'
+    tpspawn: '&8» &7Teleportowales sie na spawn !'
+    tpspawnother:  '&8» &7Teleportowales gracza &2{PLAYER} &7na spawn !'
+  sidebar:
+    statuschange: '&8» &7Od teraz twoj sidebar jest &2{STATUS}'
+  nick:
+    badnick: '&8» &7Ten nick jest niepoprawny! Nie mozesz podszywac sie za kogos innego! Mozesz zmienic kolory nicku tylko dla swojego nicku!'
+    change: '&8» &7Twoj nick zostal zmieniony z {OLD} &7na &2{NEW}&7!'
+    changeother: '&8» &7Zmieniles nick gracza &2{PLAYER} z {OLD} na {NEW}!'
+  setname:
+    change: '&8» &7Nazwa tego przedmiotu zostala zmieniona na: &2{NAME}'
+  setlore:
+    change: '&8» &7Opis tego przedmiotu zostala zmieniona na: &2{LORE}'
+  addlore:
+    change: '&8» &7Do opisu tego przedmiotu zostala dodana linijka: &2{LORE}'
+  enchant:
+    unknowenchant: '&8» &7Enchant &2{ENCHANT} &7nie istnieje!'
+    badid: '&8» &7To id jest niepoprawne !'
+    badlvl: '&8» &7Podany lvl jest niepoprawny !'
+    addenchant: '&8» &7Do tego przedmiotu zostal dodany enchant o id &2{ENCHANT}&7!'
+  feed:
+    addfood: '&8» &7Zostales nakarmiony!'
+    addfoodother: '&8» &7Nakarmiles gracza &2{PLAYER}&7!'
+  heal:
+    heal: '&8» &7Zostales uleczony!'
+    healother: '&8» &7Uleczyles gracza &2{PLAYER}&7!'
+  fly:
+    change: '&8» &7Twoj fly zostal &2{STATUS}'
+    changeother: '&8» &7Fly dla gracz &2{PLAYER} &7zostal &2{STATUS}'
+  speed:
+    badspeed: '&8» &7Ta predkosc jest niepoprawna !'
+    changespeed: '&8» &7Od teraz twoja predkosc &2{TYPE} &7wynosi {SPEED}'
+    changespeedother: '&8» &7Od teraz predkosc &2{TYPE} &7gracza &2{PLAYER} &7wynosi {SPEED}'
+    walking: 'Chodzenia'
+    flying: 'Latania'
+  setwarp:
+    setwarp: '&8» &7Ustawiles warpa o nazwie &2{WARP}'
+  warp:
+    warplist: '&8» &7Lista warpow: &2{WARPS}'
+    tpdelay: '&8» &7Teleportacja na warp &2{WARP} &7nastapi za &2{DELAY} &7sekund!'
+    warp: '&8» &7Teleportowales sie na warp o nazwie: &2{WARP}!'
+    warpother: '&8» &7Teleportowales gracza &2{PLAYER} &7na warp o nazwie: &2{WARP}!'
+    nowarps: '&8» &7Nie istnieje zaden warp !'
+    nowarp: '&8» &7Nie istnieje warp o nazwie: &2{WARP}&7!'
+  delwarp:
+    delwarp: '&8» &7Usunales warp o nazwie: &2{WARP}'
+    nowarps: '&8» &7Nie istnieje zaden warp !'
+    nowarp: '&8» &7Nie istnieje warp o nazwie: &2{WARP}&7!'
+  msg:
+    msgyou: '&2{YOU} &8» &2{ARG}&8: &7{MSG}'
+    msgarg: '&2{ARG} &8» &2{YOU}&8: &7{MSG}'
+    noreplyplayer: '&8» &7Nie ma osoby do ktorej mogl bys odpisac !'
+  socialspy:
+    change: '&8» &7SocialSpy zostal &2{STATUS}'
+    prefix: '&8[&2SOCIALSPY&8] &7{MSG}'
+  commandspy:
+    change: '&8» &7CommandSpy zostal &2{STATUS}'
+    prefix: '&8[&2COMMANDSPYY&8] &7{PLAYER} - {CMD}'
+  helpop:
+    player: '&8» &7Napisales helpop o tresci: &2{MSG}'
+    admin: '&8[&2HELPOP&8] &8» &2{PLAYER}&8: &7{MSG}'
+  tpa:
+    msgyou: '&8» &7Poprosiles gracza &2{PLAYER} &7o teleportacje do niego!'
+    msgarg:
+      - '&8» &7Gracz &2{PLAYER} &7prosi o teleportacje do ciebie'
+      - '&8» &7Wpisz &2/tpaccept &7jezeli chcesz zaakceptowac, jezeli nie wpisz &2/tpdeny'
+  tpahere:
+    msgyou: '&8» &7Poprosiles gracza &2{PLAYER} &7o teleportacje go do siebie!'
+    msgarg:
+      - '&8» &7Gracz &2{PLAYER} &7prosi o teleportacje do niego'
+      - '&8» &7Wpisz &2/tpaccept &7jezeli chcesz zaakceptowac, jezeli nie wpisz &2/tpdeny'
+  tpaccept:
+    msgyou: '&8» &7Gracz &2{PLAYER} &7akceptowal prosbe!'
+    msgarg: '&8» &7Akceptowales prosbe gracza &2{PLAYER}&7!'
+    tpdelay: '&8» &7Teleportacja nastapi za &2{DELAY} &7sekund!'
+    teleportation: '&8» &7Teleportowales sie do gracza &2{PLAYER}!'
+    noplayer: '&8» &7Nie masz komu akceptowac teleportacji !'
+  tpadeny:
+    msgyou: '&8» &7Gracz &2{PLAYER} &7odrzucil prosbe!'
+    msgarg: '&8» &7Odrzuciles prosbe gracza &2{PLAYER}&7!'
+    noplayer: '&8» &7Nie masz komu odrzucic teleportacji !'
+  punishments:
+    never: 'Nigdy'
+    clearip: '{IP-1}.*.*.*'
+    wrongtime: '&8» &7Podany czas jest niepoprawny !'
+    wrongtype: '&8» &7Niepoprawny typ ! Dozwolone: &2player/ip'
+    kick:
+      admin: '&8» &7Wyrzuciles gracza &2{PLAYER} &7z powodem &2{REASON}'
+      broadcast: '&8» &7Gracz &2{PLAYER} &7zostal wyrzucony z powodem &2{REASON} &7przez &2{ADMIN}'
+    ban:
+      admin: '&8» &7Zbanowales gracza &2{PLAYER} &7z powodem &2{REASON} do {TIME}'
+      broadcast: '&8» &7Gracz &2{PLAYER} &7zostal zbanowany z powodem &2{REASON} &7przez &2{ADMIN} do {TIME}'
+    unban:
+      admin: '&8» &7Odbanowales gracza &2{PLAYER}'
+    banip:
+      admin: '&8» &7Zbanowales ip &2{IP} &7 na IP z powodem &2{REASON} do {TIME}'
+      broadcast: '&8» &7IP &2{IP} &7zostalo zbanowane z powodem &2{REASON} &7przez &2{ADMIN} do {TIME}'
+    unbanip:
+      admin: '&8» &7Odbanowales ip &2{IP}'
+    mute:
+      playermute: '&8» &7Jestes wyciszony do &2{TIME}'
+      admin: '&8» &7Wyciszyles gracza &2{PLAYER} &7z powodem &2{REASON} do &2{TIME}'
+      player: '&8» &7Gracz &2{ADMIN} &7wyciszyl ciebie z powodem &2{REASON} do &2{TIME}'
+      broadcast: '&8» &7Gracz &2{PLAYER} &7zostal wyciszony  z powodem &2{REASON} &7do &2{TIME} &7przez &2{ADMIN}'
+    unmute:
+      msg: '&8» &7Odciszyles gracza &2{PLAYER}'
+  kickall:
+    player: '&8» &7Wyrzuciles wszystkich graczy z serwera !'
+  vanish:
+    change: '&8» &7Twoj vanish zostal &2{STATUS}'
+  time:
+    change: '&8» &7Czas na swiecie &2{WORLD} &7zostal zmieniony na: &2{TIME}'
+    wrongtime: '&8» &7Podany czas jest niepoprawny!'
+    times:
+      day: 'Dzien'
+      night: 'Noc'
+  weather:
+    change: '&8» &7Pogoda na swiecie &2{WORLD} &7zostal zmieniony na: &2{WEATHER}'
+    wrongweather: '&8» &7Podana pogoda jest niepoprawna'
+    weathers:
+      sun: 'Slonce'
+      rain: 'Deszcz'
+      storm: 'Burza'
+  list:
+    list:
+      - '&8» &7Ilosc: &2{ONLINE}&8/&2{MAXONLINE}'
+      - '&8» &7Gracze: &2{PLAYERS}'
+  whois:
+    online:
+      - '&8&m------------------------------------------'
+      - '&8» &7Nick: &2{PLAYER}'
+      - '&8» &7Ip: &2{IP}'
+      - '&8» &7UUID &2{UUID}'
+      - '&8» &7Online: &aTAK'
+      - '&8» &7Lokalizacja: &2{WORLD}, {X},{Y},{Z}'
+      - '&8» &7Zycie: &2{HEALTH}&8/&2{MAXHEALTH}'
+      - '&8» &7Nasycenie: &2{FOOD}&8/&220'
+      - '&8» &7Fly: &2{FLY}'
+      - '&8» &7Gamemode: &2{GAMEMODE}'
+      - '&8&m------------------------------------------'
+    offline:
+      - '&8&m------------------------------------------'
+      - '&8» &7Nick: &2{PLAYER}'
+      - '&8» &7Ip: &2{IP}'
+      - '&8» &7UUID &2{UUID}'
+      - '&8» &7Online: &cNIE'
+      - '&8&m------------------------------------------'
+  whitelist:
+    addplayer: '&8» &7Dodales gracza &2{PLAYER} &7do whitelisty!'
+    removeplayer: '&8» &7Usunales gracza &2{PLAYER} &7z whitelisty!'
+    enable: '&8» &7Wlaczyles whiteliste!'
+    disable: '&8» &7Wylaczyles whiteliste!'
+    message: '&8» &7Ustawiles wiadomosc whitelisty na: &2{MSG}'
+  op:
+    op:
+      broadcast: '&8» &7Gracz &2{PLAYER} &7stal sie administratorem serwera!'
+      sender: '&8» &7Dales graczowi &2{PLAYER} &7uprawnienia administratora!'
+    deop:
+      broadcast: '&8» &7Gracz &2{PLAYER} &7juz nie jest administratorem serwera!'
+      sender: '&8» &7Zabrales graczowi &2{PLAYER} &7uprawnienia administratora!'
+  itemshop:
+    servicelist: '&8» &7Lista uslug: &2{SERVICES}'
+    noservice: '&8» &7Nie istnieje usluga &2{SERVICE}'
+    noservices: '&8» &7Nie istnieja zadne uslugi!}'
+  recipes:
+    norecipes: '&8» &7Nie istnieje zadna receptura ktora mozna wyswietlic !'
+  turbodrop:
+    wrongtime: '&8» &7Podany czas jest niepoprawny !'
+    timelimit: '&8» &7Podany czas jest za duzy max, 1 dzien (86400 sekund)!'
+    turboall:
+      broadcast: '&8» &7Gracz &2{ADMIN} &7wlaczyl wszystkim turbodrop na &2{TIME}'
+      player: '&8» &7Wlaczyles wszystkim turbodrop na &2{TIME}'
+    turboplayer:
+      playerarg: '&8» &7Gracz &2{ADMIN} &7wlaczyl ci turbodrop na &2{TIME}'
+      player: '&8» &7Wlaczyles graczowi &2{PLAYER} &7turbodrop na &2{TIME}'
+    timeleft:
+      turboall: '&8» &7Uplynal turbodrop dla calego serwera!'
+      turboplayer: '&8» &7Uplynal turbodrop dla gracza &2{PLAYER}&7!'
+  teleport:
+    tptoplayer: '&8» &7Teleportowales sie do gracza &2{PLAYEROTHER}'
+    tptocord: '&8» &7Teleportowales sie na kordy &2{X}, {Y}, {Z}'
+    tpplayertoplayer: '&8» &7Teleportowales gracza &2{PLAYER} &7do gracza &2{PLAYEROTHER}'
+    tpplayertocord: '&8» &7Teleportowales gracza &2{PLAYER} &7na kordy &2{X}, {Y}, {Z}'
+  give:
+    player: '&8» &7Otrzymales &2{ITEM} x{AMOUNT}'
+    admin: '&8» &7Dales graczowi &2{PLAYER} &2{ITEM} x{AMOUNT}'
+  god:
+    change: '&8» &7GOD zostal &2{STATUS}'
+  case:
+    player:
+      admin: '&8» &7Dales graczowi &2{PLAYER} {ITEM}x{AMOUNT}'
+    all:
+      broadcast: '&8» &7Wszyscy otrzymali &2{ITEM}x{AMOUNT}'
+      admin: '&8» &7Dales wszystkim &2{ITEM}x{AMOUNT}'
+    case: 'CASE'
+    key: 'KLUCZ'
+  blockedcmd:
+    message: '&8» &7Nie mozesz tego zrobic! Ta komenda jest zablokowana dla ciebie!'

@@ -1,0 +1,8 @@
+spawn:
+  locx: 0
+  locy: 100
+  locz: 0
+  locworld: 'world'
+warps:
+whitelist:
+  message: '&cNie jestes na whiteliscie !'

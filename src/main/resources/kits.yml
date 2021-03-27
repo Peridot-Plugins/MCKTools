@@ -1,0 +1,155 @@
+guiname: '&8» &7ZESTAWY'
+background:
+  material: STAINED_GLASS_PANE
+  data: 15
+  name: ' '
+item:
+  name: '{KITNAME}'
+  lore:
+    - '&6Mozna wziasc: &7{TIME}'
+  now: 'Teraz'
+kits:
+  gracz:
+    time: 3600
+    material: DIRT
+    data: 0
+    kitname: '&6GRACZ'
+    permission: "mckt.kit.gracz"
+    items:
+      pickaxe:
+        material: STONE_PICKAXE
+        data: 0
+        amount: 1
+        name: '&6Kit Gracz'
+        lore:
+          - '&cKit Gracz'
+        enchantment:
+          - DURABILITY:3
+  vip:
+    time: 43200
+    material: GOLD_INGOT
+    data: 0
+    kitname: '&6VIP'
+    permission: "mckt.kit.vip"
+    items:
+      pickaxe:
+        material: IRON_PICKAXE
+        data: 0
+        amount: 1
+        name: '&6Kit VIP'
+        lore:
+          - '&cKit VIP'
+        enchantment:
+          - DURABILITY:3
+  svip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  evip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  uvip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  bvip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  cvip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  ovip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3
+  pvip:
+    time: 86400
+    material: DIAMOND
+    data: 0
+    kitname: '&6SVIP'
+    permission: "mckt.kit.svip"
+    items:
+      pickaxe:
+        data: 0
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&6Kit SVIP'
+        lore:
+          - '&cKit SVIP'
+        enchantment:
+          - DURABILITY:3

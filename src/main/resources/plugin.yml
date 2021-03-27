@@ -1,0 +1,155 @@
+name: MCKTools
+version: 1.0
+main: me.mckoxu.mcktools.MCKTools
+author: Peridot
+depend: [Vault, FunnyGuilds]
+softdepend: [PlaceholderAPI]
+website: mlgroup.pl
+api-version: 1.13
+
+commands:
+  kit:
+    aliases: [kits, zestaw, zestawy]
+    description: Daje zestaw
+  broadcast:
+    aliases: [bc, uwaga]
+    description: Wysyla wiadomosc do wszystkich graczy na serwerze
+  gamemode:
+    aliases: [gm]
+    description: Zmienia tryb gracza
+  chat:
+    aliases: [c]
+    description: Zarzadzanie chatem
+  setspawn:
+    description: Ustawia miejsce spawna
+  spawn:
+    description: Teleportuje na spawn
+  stats:
+    aliases: [statystyki, statistics]
+    description: Pokazuje statystyki gracza
+  nick:
+    description: Zmienia wyswietlany nick gracza
+  setname:
+    aliases: [rename, name, nazwa]
+    description: Ustawia nazwe przedmiotu w rece
+  setlore:
+    aliases: [relore, lore, opis]
+    description: Ustawia opis przedmiotu w rece
+  addlore:
+    description: Dodaje linijke o opis przedmiotu w rece
+  enchant:
+    aliases: [enchantuj, ench]
+    description: Dodaje enchant do przedmiotu w rece
+  enderchest:
+    aliases: [ec, echest, enderc]
+    description: Otwiera enderchest gracza
+  feed:
+    aliases: [nakarm, food]
+    description: Nakarmia gracza
+  heal:
+    aliases: [ulecz]
+    description: Ulecza gracza
+  fly:
+    aliases: [latanie]
+    description: Wlacza latanie graczowi
+  speed:
+    description: Ustawia szybkosc biegania/latania graczowi
+  setwarp:
+    aliases: [ustawwarp]
+    description: Ustawia warp
+  warp:
+    description: Teleportuje do warpu
+  delwarp:
+    aliases: [usunwarp]
+    description: Usuwa warpa
+  msg:
+    aliases: [m, message, tell, t]
+    description: Wysyla prywatna wiadomosc do gracza
+  reply:
+    aliases: [r]
+    description: Odpowiada na ostatnia napisana wiadomosc
+  socialspy:
+    aliases: [socials, ss, sspy]
+    description: Wlacza widzenie prywatnych wiadomosci gracza
+  commandspy:
+    aliases: [commands, cs, cspy, cmds, cmdspy]
+    description: Wlacza widzenie komend jakie gracz wysyla
+  helpop:
+    description: Wysyla zgloszenie do admina
+  tpa:
+    description: Wysyla prosbe o teleportacja do gracza
+  tpahere:
+    description: Wysyla prosbe o teleportacja gracza do siebie
+  tpaccept:
+    aliases: [taccept, tpaaccept]
+    description: Akceptuje prosbe o teleportacje
+  tpadeny:
+    aliases: [tdeny, tpdeny]
+    description: Odrzuca prosbe o teleportacje
+  kick:
+    description: Wyrzuca gracza z serwera
+  kickall:
+    aliases: [kicka]
+    description: Wyrzuca wszystkich graczy z serwera
+  vanish:
+    aliases: [v]
+    description: Wlacza vanisha dla gracza
+  time:
+    aliases: [czas]
+    description: Zmienia czas w swiece
+  weather:
+    aliases: [w, pogoda]
+    description: Ustawia pogode w swiecie
+  god:
+    description: Wlacza niesmiertelnosc graczowi
+  mute:
+    aliases: [wycisz]
+    description: Wycisza gracza
+  unmute:
+    description: Wylacza wyciszenie gracza
+  list:
+    description: Wyswietla liste graczy na serwerze
+  whois:
+    description: Wyswietla informacje o graczu
+  pomoc:
+    aliases: [help]
+    description: Wyswietla pomoc
+  workbench:
+    aliases: [wb, craft]
+    description: Otwiera crafting dla gracza
+  administracja:
+    aliases: [admins]
+    description: Pokazuje administratorow serwera
+  whitelist:
+    aliases: [wl]
+    description: Opcje whitelisty
+  op:
+    description: Daje opa graczowi
+  deop:
+    description: Zabiera opa graczowi
+  itemshop:
+    aliases: [is]
+    description: Opcje itemshopa
+  recipes:
+    aliases: [receptury, craftings, craftingi]
+    description: Receptury
+  drop:
+    description: Pokazuje drop na serwerze
+  turbodrop:
+    aliases: [turbod, td, tdrop]
+    description: Wlacza trubodrop dla gracza
+  teleport:
+    aliases: [tp]
+    description: Teleportuje gracza do innego gracza lub na koordynaty
+  ban:
+    aliases: [zbanuj]
+    description: Banuje gracza
+  unban:
+    aliases: [odbanuj, pardon]
+    description: Odbanowuje gracza
+  case:
+    aliases: [skrzynka, magicznaskrzynka, magiccase]
+    description: Daje magiczna skrzynie/klucz
+  trash:
+    aliases: [kosz, smietnik]
+    description: Otwiera smietnik dla gracza

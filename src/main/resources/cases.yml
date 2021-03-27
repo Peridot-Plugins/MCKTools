@@ -1,0 +1,156 @@
+case:
+  name: '&8>> &6Magiczna Skrzynka'
+  lore:
+    - "&9Aby ja otworzyc potrzebujesz magicznego klucza!"
+  enchantment:
+key:
+  name: '&8>> &6Magiczny Klucz'
+  lore:
+    - "&9Ten klucz otwiera magiczna skrzynke!"
+  enchantment:
+gui:
+  title: "&8» &7Otwieranie..."
+  droptitle: '&7Twoj drop \/'
+  background:
+    material: STAINED_GLASS_PANE
+    data: 15
+    name: ' '
+messages:
+  nokey: '&8» &7Nie posiadasz klucza !'
+rarity:
+  item:
+    enabled: true
+  common:
+    firework:
+      red: 140
+      green: 140
+      blue: 140
+    item:
+      material: STAINED_GLASS_PANE
+      data: 8
+      name: '&7*'
+  rare:
+    firework:
+      red: 0
+      green: 255
+      blue: 255
+    item:
+      material: STAINED_GLASS_PANE
+      data: 11
+      name: '&3*'
+  epic:
+    firework:
+      red: 255
+      green: 0
+      blue: 255
+    item:
+      material: STAINED_GLASS_PANE
+      data: 10
+      name: '&5*'
+  legendary:
+    firework:
+      red: 255
+      green: 0
+      blue: 0
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14
+      name: '&4*'
+
+drop:
+  items:
+    diamond:
+      material: DIAMOND
+      data: 0
+      amount: 32
+      name: '&bDiament'
+      lore:
+        - "&9Ten diament pochodzi z CASE'a"
+      enchantment:
+      chance: 5
+      rarity: EPIC
+    gold:
+      material: GOLD_INGOT
+      data: 0
+      amount: 32
+      name: '&6Zloto'
+      lore:
+        - "&9To zloto pochodzi z CASE'a"
+      enchantment:
+      chance: 10
+      rarity: RARE
+    iron:
+      material: IRON_INGOT
+      data: 0
+      amount: 32
+      name: '&7Zelazo'
+      lore:
+        - "&9To zelazo pochodzi z CASE'a"
+      enchantment:
+        chance: 15
+      rarity: COMMON
+    sword:
+      material: DIAMOND_SWORD
+      data: 0
+      amount: 1
+      name: '&8>> &6Poskramiacz'
+      lore:
+        - "&9Ten miecz pochodzi z CASE'a"
+      enchantment:
+        - DURABILITY:4
+        - DAMAGE_ALL:6
+      chance: 2
+      rarity: LEGENDARY
+    pickaxe:
+      material: DIAMOND_PICKAXE
+      data: 0
+      amount: 1
+      name: '&8>> &6Wiertlo'
+      lore:
+        - "&9Ten kilof pochodzi z CASE'a"
+      enchantment:
+        - DURABILITY:4
+        - DIG_SPEED:6
+      chance: 2
+      rarity: LEGENDARY
+    chest:
+      material: CHEST
+      data: 0
+      amount: 2
+      name: '&8>> &6Magiczna Skrzynka'
+      lore:
+        - "&9Aby ja otworzyc potrzebujesz magicznego klucza!"
+      enchantment:
+      chance: 4
+      rarity: EPIC
+    key:
+      material: TRIPWIRE_HOOK
+      data: 0
+      amount: 2
+      name: '&8>> &6Magiczny Klucz'
+      lore:
+        - "&9Ten klucz otwiera magiczna skrzynke!"
+      enchantment:
+      chance: 5
+      rarity: EPIC
+    tnt:
+      material: TNT
+      data: 0
+      amount: 32
+      name: '&cTNT'
+      lore:
+        - "&9To TNT pochodzi z magicznej skrzynki!"
+      enchantment:
+      chance: 15
+      rarity: COMMON
+    obsidian:
+      material: OBSIDIAN
+      data: 0
+      amount: 32
+      name: '&5Obsydian'
+      lore:
+        - "&9Ten obsydian pochodzi z magicznej skrzynki!"
+      enchantment:
+      chance: 15
+      rarity: COMMON
+
